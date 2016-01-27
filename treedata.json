@@ -1,0 +1,102 @@
+{
+  "name": "Prodcuct",
+  "parent": "null",
+  "children": [
+    {
+      "name": "Component A",
+      "parent": "Prodcuct",
+      "children": [
+        {
+          "name": "Process 1",
+          "parent": "Component A"
+        },
+        {
+          "name": "Process 2",
+          "parent": "Component A"
+        },
+        {
+          "name": "Process 3",
+          "parent": "Component A"
+        },
+        {
+          "name": "Process 4",
+          "parent": "Component A"
+        }
+      ]
+    },
+    {
+      "name": "Component B",
+      "parent": "Prodcuct",
+      "children": [
+        {
+          "name": "Process 5",
+          "parent": "Component B"
+        },
+        {
+          "name": "Process 6",
+          "parent": "Component B"
+        },
+        {
+          "name": "Process 7",
+          "parent": "Component B"
+        },
+        {
+          "name": "Process 8",
+          "parent": "Component B"
+        },
+        {
+          "name": "Process 9",
+          "parent": "Component B"
+        }
+      ]
+    },
+    {
+      "name": "Component C",
+      "parent": "Prodcuct",
+      "children": [
+        {
+          "name": "Process 1",
+          "parent": "Component C"
+        },
+        {
+          "name": "Process 3",
+          "parent": "Component C"
+        },
+        {
+          "name": "Process 4",
+          "parent": "Component C"
+        },
+        {
+          "name": "Process 7",
+          "parent": "Component C"
+        },
+        {
+          "name": "Process 8",
+          "parent": "Component C"
+        }
+      ]
+    },
+    {
+      "name": "Component D",
+      "parent": "Prodcuct",
+      "children": [
+        {
+          "name": "Process 3",
+          "parent": "Component D"
+        },
+        {
+          "name": "Process 5",
+          "parent": "Component D"
+        },
+        {
+          "name": "Process 7",
+          "parent": "Component D"
+        },
+        {
+          "name": "Process 8",
+          "parent": "Component D"
+        }
+      ]
+    }
+  ]
+}

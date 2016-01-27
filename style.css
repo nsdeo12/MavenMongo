@@ -1,0 +1,24 @@
+h1 {
+	font-family: ubuntu, serif;
+
+}
+.node circle {
+	fill: #fff;
+	stroke: steelblue;
+	stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+	fill: none;
+	stroke: #000;
+	stroke-width: 2px;
+}
+
+#backgroundRect {
+	fill: #ddd;
+}
+.bargraphRectangle {
+	fill: #abc;
+}
