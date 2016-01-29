@@ -8,7 +8,7 @@ var datasetP1 = [
   {name: "Wealth",     value: 15},
   {name: "One",   value: 65},
   {name: "for", value: 22},
-  {name: "the",     value: 98},
+  {name: "the",     value: 8},
   {name: "world",   value: 34},
   {name: "frankly", value: 45},
   {name: "my", value: 1},
@@ -104,7 +104,8 @@ level1graph_container.append("rect")
     .attr("height", barGraphRectHeight)
     .attr("class", "bargraphRectangle")
     .attr("rx", 25);
-        
+
+datasetP1.sort(function(a,b) {return b.value-a.value});        
 var xscale = d3.scale.linear()
     .domain([0, d3.max(datasetP1, function(d){return d.value})])
     .range([0,barGraphWidth]);
@@ -125,7 +126,6 @@ var chart = d3.select("#level1graph_container")
     .append("g")
     .attr("transform", "translate(50,30)")
     .attr("width", barGraphWidth);
-
 
 var bar = chart.selectAll("rect")
     .data(datasetP1)
@@ -158,3 +158,4 @@ level2graph_container.append("rect")
     .attr("height", barGraphRectHeight)
     .attr("class", "bargraphRectangle")
     .attr("rx", 25);
+
