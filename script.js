@@ -25,7 +25,29 @@ var datasetP1 = [
   {name: "there", value: 23},
   {name: "Hola",     value: 62}
 ];
-
+var datasetP1End = [
+  {name: "Once",    value:  4},
+  {name: "Upon",    value:  48},
+  {name: "A",     value: 15},
+  {name: "Time",   value: 25},
+  {name: "In", value: 22},
+  {name: "IISc",     value: 8},
+  {name: "Blore",   value: 34},
+  {name: "there", value: 45},
+  {name: "was", value: 1},
+  {name: "conference",     value: 18},
+  {name: "where",   value: 12},
+  {name: "PhD", value: 41},
+  {name: "student", value: 20},
+  {name: "participate",     value: 34},
+  {name: "He",   value: 8},
+  {name: "got", value: 49},
+  {name: "cookies", value: 12},
+  {name: "pastry",     value: 42},
+  {name: "dosa",   value: 7},
+  {name: "roti", value: 23},
+  {name: "curry",     value: 62}
+];
 // ************** Generate the tree diagram	 *****************
 var margin = {top: 20, right: 120, bottom: 20, left: 100},
 	width = 1200 - margin.right - margin.left,
@@ -105,49 +127,6 @@ level1graph_container.append("rect")
     .attr("class", "bargraphRectangle")
     .attr("rx", 25);
 
-datasetP1.sort(function(a,b) {return b.value-a.value});        
-var xscale = d3.scale.linear()
-    .domain([0, d3.max(datasetP1, function(d){return d.value})])
-    .range([0,barGraphWidth]);
-
-var xAxis = d3.svg.axis()
-    .scale(xscale)
-    .orient("top");
-    
-var yscale = d3.scale.ordinal()
-    .domain(datasetP1.map(function(d) { return d.name; }))
-    .rangeBands([0,barGraphHeight]);
-
-var yAxis = d3.svg.axis()
-    .scale(yscale)
-    .orient("left");
-
-var chart = d3.select("#level1graph_container")
-    .append("g")
-    .attr("transform", "translate(50,30)")
-    .attr("width", barGraphWidth);
-
-var bar = chart.selectAll("rect")
-    .data(datasetP1)
-   .enter().append("rect")
-    .attr("width", function(d) { return xscale(d.value); })
-    .attr("height", yscale.rangeBand())
-    .attr('x',0)
-    .attr('y',function(d,i){
-        return yscale(d.name);
-    })
-    .attr("class", "barRectangles");
-
-
-chart.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + 0 + ")")
-    .call(xAxis);
-chart.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate(0," + 0 + ")")
-    .call(yAxis);
-    
 // Generation of Level 2 graph
 var level2graph_container = d3.select("svg").append("g")
     .attr("transform", "translate(" + (margin.left+tree_width+barGraphRectWidth+150) + "," + margin.top + ")")
@@ -159,3 +138,51 @@ level2graph_container.append("rect")
     .attr("class", "bargraphRectangle")
     .attr("rx", 25);
 
+makeGraph(datasetP1,"#level1graph_container");
+makeGraph(datasetP1End,"#level2graph_container");   
+/* ********** function to make graph *********** */
+function makeGraph(dataSet,graphContainer) {
+    dataSet.sort(function(a,b) {return b.value-a.value});        
+    var xscale = d3.scale.linear()
+        .domain([0, d3.max(dataSet, function(d){return d.value})])
+        .range([0,barGraphWidth]);
+
+    var xAxis = d3.svg.axis()
+        .scale(xscale)
+        .orient("top");
+        
+    var yscale = d3.scale.ordinal()
+        .domain(dataSet.map(function(d) { return d.name; }))
+        .rangeBands([0,barGraphHeight],.1,.1);
+
+    var yAxis = d3.svg.axis()
+        .scale(yscale)
+        .orient("left");
+
+    var chart = d3.select(graphContainer)
+        .append("g")
+        .attr("transform", "translate(50,30)")
+        .attr("width", barGraphWidth);
+
+    var bar = chart.selectAll("rect")
+        .data(dataSet)
+    .enter().append("rect")
+        .attr("width", function(d) { return xscale(d.value); })
+        .attr("height", yscale.rangeBand())
+        .attr('x',0)
+        .attr('y',function(d,i){
+            return yscale(d.name);
+        })
+        .attr("rx",3)
+        .attr("class", "barRectangles");
+
+
+    chart.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + 0 + ")")
+        .call(xAxis);
+    chart.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(0," + 0 + ")")
+        .call(yAxis);
+}
