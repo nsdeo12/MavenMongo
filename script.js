@@ -1,6 +1,31 @@
 /* global d3 */
 
 
+// ************** Dataset ****************
+var datasetP1 = [
+  {name: "Human",    value:  4},
+  {name: "Health",    value:  98},
+  {name: "Wealth",     value: 15},
+  {name: "One",   value: 65},
+  {name: "for", value: 22},
+  {name: "the",     value: 98},
+  {name: "world",   value: 34},
+  {name: "frankly", value: 45},
+  {name: "my", value: 1},
+  {name: "dear",     value: 81},
+  {name: "eye",   value: 32},
+  {name: "dont", value: 41},
+  {name: "give", value: 20},
+  {name: "a",     value: 80},
+  {name: "dollar",   value: 78},
+  {name: "to", value: 49},
+  {name: "rich", value: 12},
+  {name: "pound",     value: 42},
+  {name: "rupee",   value: 7},
+  {name: "there", value: 23},
+  {name: "Hola",     value: 62}
+];
+
 // ************** Generate the tree diagram	 *****************
 var margin = {top: 20, right: 120, bottom: 20, left: 100},
 	width = 1200 - margin.right - margin.left,
@@ -8,7 +33,10 @@ var margin = {top: 20, right: 120, bottom: 20, left: 100},
 	tree_height = height -50,
     tree_width = width/3,
     barGraphRectWidth=300,
-    barGraphRectHeight=500;
+    barGraphRectHeight=500,
+    barHeight=20,
+    barGraphWidth=240,
+    barGraphHeight=450;
 
 d3.select("body").append("svg")
 	.attr("width", width + margin.right + margin.left)
@@ -77,8 +105,49 @@ level1graph_container.append("rect")
     .attr("class", "bargraphRectangle")
     .attr("rx", 25);
         
+var xscale = d3.scale.linear()
+    .domain([0, d3.max(datasetP1, function(d){return d.value})])
+    .range([0,barGraphWidth]);
+
+var xAxis = d3.svg.axis()
+    .scale(xscale)
+    .orient("top");
+    
+var yscale = d3.scale.ordinal()
+    .domain(datasetP1.map(function(d) { return d.name; }))
+    .rangeBands([0,barGraphHeight]);
+
+var yAxis = d3.svg.axis()
+    .scale(yscale)
+    .orient("left");
+
+var chart = d3.select("#level1graph_container")
+    .append("g")
+    .attr("transform", "translate(50,30)")
+    .attr("width", barGraphWidth);
 
 
+var bar = chart.selectAll("rect")
+    .data(datasetP1)
+   .enter().append("rect")
+    .attr("width", function(d) { return xscale(d.value); })
+    .attr("height", yscale.rangeBand())
+    .attr('x',0)
+    .attr('y',function(d,i){
+        return yscale(d.name);
+    })
+    .attr("class", "barRectangles");
+
+
+chart.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + 0 + ")")
+    .call(xAxis);
+chart.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(0," + 0 + ")")
+    .call(yAxis);
+    
 // Generation of Level 2 graph
 var level2graph_container = d3.select("svg").append("g")
     .attr("transform", "translate(" + (margin.left+tree_width+barGraphRectWidth+150) + "," + margin.top + ")")
