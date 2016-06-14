@@ -8,19 +8,127 @@
       "children": [
         {
           "name": "Process 1",
-          "parent": "Component A"
+          "parent": "Component A",
+          "children": [
+           {
+          	"name": "Ammonia",
+          	"value": 45,
+          	"parent": "Process 1"
+           },
+           {
+          	"name": "NOX",
+          	"value": 220,
+          	"parent": "Process 1"
+           },
+           {
+          	"name": "Acetone",
+          	"value": 80,
+          	"parent": "Process 1"
+           },
+           {
+          	"name": "Methane",
+          	"value": 190,
+          	"parent": "Process 1"
+           },
+           {
+          	"name": "Acrolein",
+          	"value": 5,
+          	"parent": "Process 1"
+           }
+          ]
         },
         {
           "name": "Process 2",
-          "parent": "Component A"
+          "parent": "Component A",
+          "children": [
+           {
+          	"name": "Ammonia",
+          	"value": 452,
+          	"parent": "Process 2"
+           },
+           {
+          	"name": "NOX",
+          	"value": 545,
+          	"parent": "Process 2"
+           },
+           {
+          	"name": "Acetone",
+          	"value": 76,
+          	"parent": "Process 2"
+           },
+           {
+          	"name": "Acetaldehyde",
+          	"value": 591,
+          	"parent": "Process 2"
+           },
+           {
+          	"name": "Acrolein",
+          	"value": 10,
+          	"parent": "Process 2"
+           }
+          ]
         },
         {
           "name": "Process 3",
-          "parent": "Component A"
+          "parent": "Component A",
+          "children": [
+           {
+          	"name": "Ammonia",
+          	"value": 65,
+          	"parent": "Process 3"
+           },
+           {
+          	"name": "NOX",
+          	"value": 145,
+          	"parent": "Process 3"
+           },
+           {
+          	"name": "Acetone",
+          	"value": 275,
+          	"parent": "Process 3"
+           },
+           {
+          	"name": "Acetaldehyde",
+          	"value": 315,
+          	"parent": "Process 3"
+           },
+           {
+          	"name": "Acrolein",
+          	"value": 400,
+          	"parent": "Process 3"
+           }
+          ]
         },
         {
           "name": "Process 4",
-          "parent": "Component A"
+          "parent": "Component A",
+          "children": [
+           {
+          	"name": "Ammonia",
+          	"value": 45,
+          	"parent": "Process 4"
+           },
+           {
+          	"name": "NOX",
+          	"value": 45,
+          	"parent": "Process 4"
+           },
+           {
+          	"name": "Acetone",
+          	"value": 45,
+          	"parent": "Process 4"
+           },
+           {
+          	"name": "Acetaldehyde",
+          	"value": 45,
+          	"parent": "Process 4"
+           },
+           {
+          	"name": "Acrolein",
+          	"value": 45,
+          	"parent": "Process 4"
+           }
+          ]
         }
       ]
     },
@@ -30,7 +138,34 @@
       "children": [
         {
           "name": "Process 5",
-          "parent": "Component B"
+          "parent": "Component B",
+          "children": [
+           {
+          	"name": "Ammonia",
+          	"value": 45,
+          	"parent": "Process 5"
+           },
+           {
+          	"name": "NOX",
+          	"value": 45,
+          	"parent": "Process 5"
+           },
+           {
+          	"name": "Acetone",
+          	"value": 45,
+          	"parent": "Process 5"
+           },
+           {
+          	"name": "Acetaldehyde",
+          	"value": 45,
+          	"parent": "Process 5"
+           },
+           {
+          	"name": "Acrolein",
+          	"value": 45,
+          	"parent": "Process 5"
+           }
+          ]
         },
         {
           "name": "Process 6",
@@ -90,7 +225,34 @@
         },
         {
           "name": "Process 7",
-          "parent": "Component D"
+          "parent": "Component D",
+          "children": [
+           {
+          	"name": "Ammonia",
+          	"value": 45,
+          	"parent": "Process 7"
+           },
+           {
+          	"name": "NOX",
+          	"value": 45,
+          	"parent": "Process 7"
+           },
+           {
+          	"name": "Acetone",
+          	"value": 45,
+          	"parent": "Process 7"
+           },
+           {
+          	"name": "Acetaldehyde",
+          	"value": 45,
+          	"parent": "Process 7"
+           },
+           {
+          	"name": "Acrolein",
+          	"value": 45,
+          	"parent": "Process 7"
+           }
+          ]
         },
         {
           "name": "Process 8",
