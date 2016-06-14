@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<ecoSpold xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.EcoInvent.org/EcoSpold01" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold01 http://www.EcoInvent.org/EcoSpold01..\..\EcoSpold01Dataset.xsd">
+  <dataset validCompanyCodes="CompanyCodes.xml" validRegionalCodes="RegionalCodes.xml" validCategories="Categories.xml" validUnits="Units.xml" number="2" timestamp="2006-02-28T09:07:10" generator="SimaPro 7.1">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction datasetRelatesToProduct="true" name="alu tubes production 3 dl demo7" localName="alu tubes production 3 dl demo7" infrastructureProcess="false" amount="14.64" unit="kg" category="Non ferro" subCategory="Other processing" localCategory="Non ferro" localSubCategory="Other processing" infrastructureIncluded="false"/>
+        <geography location="GLO" text="Unspecified"/>
+        <technology text="Unspecified"/>
+        <timePeriod dataValidForEntirePeriod="false" text="Unspecified">
+          <startDate>1900-01-01</startDate>
+          <endDate>1900-01-01</endDate>
+        </timePeriod>
+        <dataSetInformation type="2" impactAssessmentResult="false" timestamp="2006-02-28T09:07:10" internalVersion="0.0" energyValues="0" languageCode="en" localLanguageCode="de"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness/>
+        <source number="1" sourceType="0" firstAuthor="Unknown" year="2006" title="BUWAL 250 (1996)" placeOfPublications="Unspecified"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="2" qualityNetwork="1"/>
+        <dataGeneratorAndPublication person="3" dataPublishedIn="2" referenceToPublishedSource="1" accessRestrictedTo="0"/>
+        <person number="2" name="SimaPro" address="Unknown"/>
+        <person number="3" name="SimaPro" address="Unknown"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange number="1" name="alu tubes production 3 dl demo7" location="GLO" unit="kg" meanValue="14.64" infrastructureProcess="false">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange number="2" name="electricity, low voltage, production UCTE, at grid" location="UCTE S demo7" unit="kWh" meanValue="7.4" uncertaintyType="0" generalComment="If only electricity is used and no thermal energy then &#xA;the total electricity use is 23.05 kWh" infrastructureProcess="false">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange number="3" name="heat, natural gas, at industrial furnace >100kW" location="RER S demo7" unit="MJ" meanValue="66.96" uncertaintyType="0" infrastructureProcess="false">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange number="4" category="air" subCategory="unspecified" name="VOC, volatile organic compounds" unit="kg" meanValue="0.4275" uncertaintyType="0">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange number="5" category="air" subCategory="unspecified" name="Ammonia" unit="kg" meanValue="0.0033" uncertaintyType="0">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange number="6" category="final-waste-flow" subCategory="unspecified" name="Aluminium waste" unit="kg" meanValue="0.48" uncertaintyType="0" generalComment="for recycling">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange number="7" category="final-waste-flow" subCategory="unspecified" name="Chemical waste, unspecified" unit="kg" meanValue="0.9" uncertaintyType="0" generalComment="unmoulding agent">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange number="8" category="final-waste-flow" subCategory="unspecified" name="Waste in bioactive landfill" unit="kg" meanValue="1.29" uncertaintyType="0" generalComment="composition unknown">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

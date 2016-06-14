@@ -1,0 +1,257 @@
+﻿<?xml version="1.0"?>
+<root>
+  <categories>
+    <category name="air" type="substance" internalName="Air">
+      <subCategory name="(unspecified)" substanceType="Air" abbreviation="(unspecified)"/>
+      <subCategory name="high population density" substanceType="Air" abbreviation="high. pop."/>
+      <subCategory name="indoor" substanceType="Air" abbreviation="indoor"/>
+      <subCategory name="low population density" substanceType="Air" abbreviation="low. pop."/>
+      <subCategory name="low population density, long-term" substanceType="Air" abbreviation="low. pop., long-term"/>
+      <subCategory name="lower stratosphere + upper troposphere" substanceType="Air" abbreviation="stratosphere + troposphere"/>
+      <subCategory name="stratosphere" substanceType="Air" abbreviation="stratosphere"/>
+    </category>
+    <category name="Cardboard" type="process">
+      <subCategory name="others" processType="processing"/>
+    </category>
+    <category name="Construction" type="process">
+      <subCategory name="Paints" processType="material"/>
+    </category>
+    <category name="economic" type="substance" internalName="Economic">
+      <subCategory name="(unspecified)" substanceType="Eco" abbreviation="(unspecified)"/>
+    </category>
+    <category name="Electricity country mix" type="process">
+      <subCategory name="Low Voltage" processType="energy"/>
+    </category>
+    <category name="Glass" type="process">
+      <subCategory name="Packaging" processType="material"/>
+    </category>
+    <category name="Heat" type="process">
+      <subCategory name="Gas" processType="energy"/>
+    </category>
+    <category name="Incineration" type="process">
+      <subCategory name="Municipal incineration" processType="waste treatment"/>
+    </category>
+    <category name="Landfill" type="process">
+      <subCategory name="Sanitary landfill" processType="waste treatment"/>
+    </category>
+    <category name="Metals" type="process">
+      <subCategory name="Ferro" processType="material"/>
+      <subCategory name="Non Ferro" processType="material"/>
+    </category>
+    <category name="Non ferro" type="process">
+      <subCategory name="others" processType="processing"/>
+    </category>
+    <category name="non mat." type="substance" internalName="Non mat.">
+      <subCategory name="(unspecified)" substanceType="Ivt" abbreviation="(unspecified)"/>
+    </category>
+    <category name="Paper+ Board" type="process">
+      <subCategory name="Corrugated board" processType="material"/>
+      <subCategory name="Graphic paper" processType="material"/>
+    </category>
+    <category name="Plastics" type="process">
+      <subCategory name="others" processType="processing"/>
+      <subCategory name="Thermoplasts" processType="material"/>
+    </category>
+    <category name="raw" type="substance" internalName="Raw">
+      <subCategory name="(unspecified)" substanceType="Raw" abbreviation="(unspecified)"/>
+      <subCategory name="biotic" substanceType="Raw" abbreviation="biotic"/>
+      <subCategory name="in air" substanceType="Raw" abbreviation="in air"/>
+      <subCategory name="in ground" substanceType="Raw" abbreviation="in ground"/>
+      <subCategory name="in water" substanceType="Raw" abbreviation="in water"/>
+      <subCategory name="land" substanceType="Raw" abbreviation="land"/>
+    </category>
+    <category name="Recycling" type="process">
+      <subCategory name="others" processType="waste treatment"/>
+    </category>
+    <category name="Road" type="process">
+      <subCategory name="others" processType="transport"/>
+    </category>
+    <category name="social" type="substance" internalName="Social">
+      <subCategory name="(unspecified)" substanceType="Soc" abbreviation="(unspecified)"/>
+    </category>
+    <category name="soil" type="substance" internalName="Soil">
+      <subCategory name="(unspecified)" substanceType="Soi" abbreviation="(unspecified)"/>
+      <subCategory name="agricultural" substanceType="Soi" abbreviation="agricultural"/>
+      <subCategory name="forestry" substanceType="Soi" abbreviation="forestry"/>
+      <subCategory name="industrial" substanceType="Soi" abbreviation="industrial"/>
+      <subCategory name="urban, non industrial" substanceType="Soi" abbreviation="urban, non industrial"/>
+    </category>
+    <category name="waste" type="substance" internalName="Waste">
+      <subCategory name="(unspecified)" substanceType="Sol" abbreviation="(unspecified)"/>
+    </category>
+    <category name="water" type="substance" internalName="Water">
+      <subCategory name="(unspecified)" substanceType="Wat" abbreviation="(unspecified)"/>
+      <subCategory name="fossilwater" substanceType="Wat" abbreviation="fossilwater"/>
+      <subCategory name="groundwater" substanceType="Wat" abbreviation="groundwater"/>
+      <subCategory name="groundwater, long-term" substanceType="Wat" abbreviation="groundwater, long-term"/>
+      <subCategory name="lake" substanceType="Wat" abbreviation="lake"/>
+      <subCategory name="ocean" substanceType="Wat" abbreviation="ocean"/>
+      <subCategory name="river" substanceType="Wat" abbreviation="river"/>
+      <subCategory name="river, long-term" substanceType="Wat" abbreviation="river, long-term"/>
+    </category>
+  </categories>
+  <processes>
+    <process name="alkyd varnish ETH S demo7" newName="" localName="alkyd varnish ETH S demo7" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="SP702Std11104200005" systemDescription="System model Basic Materials ETH-ESU 96">
+      <category name="Paints"/>
+      <category name="Construction"/>
+    </process>
+    <process name="alu tubes production 3 dl demo7" newName="" localName="alu tubes production 3 dl demo7" unit="" location="" infrastructureProcess="false" processType="processing" processIdentifier="Teacher610287300047" systemDescription="Ecoinvent">
+      <category name="Non ferro"/>
+    </process>
+    <process name="aluminium, production mix, at plant" newName="" localName="aluminium, production mix, at plant" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300006" systemDescription="Ecoinvent" image="Agriculture &amp; Industry 54">
+      <category name="Non Ferro"/>
+      <category name="Metals"/>
+    </process>
+    <process name="copper, at regional storage" newName="" localName="copper, at regional storage" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300007" systemDescription="Ecoinvent" image="Science &amp; Technology 630">
+      <category name="Non Ferro"/>
+      <category name="Metals"/>
+    </process>
+    <process name="corrugated board, mixed fibre, single wall, at plant" newName="" localName="corrugated board, mixed fibre, single wall, at plant" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300008" systemDescription="Ecoinvent" image="Working Stiffs 57">
+      <category name="Corrugated board"/>
+      <category name="Paper+ Board"/>
+    </process>
+    <process name="disposal, aluminium, 0% water, to municipal incineration" newName="" localName="disposal, aluminium, 0% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300019" systemDescription="Ecoinvent" image="Industry 9">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, aluminium, 0% water, to sanitary landfill" newName="" localName="disposal, aluminium, 0% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300028" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, copper, 0% water, to municipal incineration" newName="" localName="disposal, copper, 0% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300020" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, glass, 0% water, to inert material landfill" newName="" localName="disposal, glass, 0% water, to inert material landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300045" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, glass, 0% water, to municipal incineration" newName="" localName="disposal, glass, 0% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300021" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, municipal solid waste, 22.9% water, to sanitary landfill" newName="" localName="disposal, municipal solid waste, 22.9% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300029" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, packaging cardboard, 19.6% water, to municipal incineration" newName="" localName="disposal, packaging cardboard, 19.6% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300022" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, packaging cardboard, 19.6% water, to sanitary landfill" newName="" localName="disposal, packaging cardboard, 19.6% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300030" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, paper, 11.2% water, to municipal incineration" newName="" localName="disposal, paper, 11.2% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300023" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, paper, 11.2% water, to sanitary landfill" newName="" localName="disposal, paper, 11.2% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300031" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, polypropylene, 15.9% water, to municipal incineration" newName="" localName="disposal, polypropylene, 15.9% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300024" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, polypropylene, 15.9% water, to sanitary landfill" newName="" localName="disposal, polypropylene, 15.9% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300032" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, polyvinylchloride, 0.2% water, to municipal incineration" newName="" localName="disposal, polyvinylchloride, 0.2% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300025" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, polyvinylchloride, 0.2% water, to sanitary landfill" newName="" localName="disposal, polyvinylchloride, 0.2% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300033" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, steel, 0% water, to inert material landfill" newName="" localName="disposal, steel, 0% water, to inert material landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300046" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="disposal, steel, 0% water, to municipal incineration" newName="" localName="disposal, steel, 0% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300026" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, wood untreated, 20% water, to municipal incineration" newName="" localName="disposal, wood untreated, 20% water, to municipal incineration" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300027" systemDescription="Ecoinvent" image="Industry 3">
+      <category name="Municipal incineration"/>
+      <category name="Incineration"/>
+    </process>
+    <process name="disposal, wood untreated, 20% water, to sanitary landfill" newName="" localName="disposal, wood untreated, 20% water, to sanitary landfill" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300034" systemDescription="Ecoinvent" image="Abstract Color 410247">
+      <category name="Sanitary landfill"/>
+      <category name="Landfill"/>
+    </process>
+    <process name="electricity, low voltage, production UCTE, at grid" newName="" localName="electricity, low voltage, production UCTE, at grid" unit="" location="" infrastructureProcess="false" processType="energy" processIdentifier="Teacher610287300001" systemDescription="Ecoinvent" image="Hydro 4412960">
+      <category name="Low Voltage"/>
+      <category name="Electricity country mix"/>
+    </process>
+    <process name="glass, virgin" newName="" localName="glass, virgin" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300004" image="Kitchen 572">
+      <category name="Packaging"/>
+      <category name="Glass"/>
+    </process>
+    <process name="heat, natural gas, at industrial furnace >100kW" newName="" localName="heat, natural gas, at industrial furnace >100kW" unit="" location="" infrastructureProcess="false" processType="energy" processIdentifier="Teacher610287300002" systemDescription="Ecoinvent" image="camp fire">
+      <category name="Gas"/>
+      <category name="Heat"/>
+    </process>
+    <process name="injection moulding" newName="" localName="injection moulding" unit="" location="" infrastructureProcess="false" processType="processing" processIdentifier="Teacher610287300012" systemDescription="Ecoinvent" image="Industrial Architecture 4">
+      <category name="Plastics"/>
+    </process>
+    <process name="paper, wood-containing, LWC, at regional storage" newName="" localName="paper, wood-containing, LWC, at regional storage" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300009" systemDescription="Ecoinvent" image="Home Gear 74">
+      <category name="Graphic paper"/>
+      <category name="Paper+ Board"/>
+    </process>
+    <process name="polypropylene, granulate, at plant" newName="" localName="polypropylene, granulate, at plant" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300010" systemDescription="Ecoinvent" image="Modern Computers 40">
+      <category name="Thermoplasts"/>
+      <category name="Plastics"/>
+    </process>
+    <process name="polyvinylchloride, at regional storage" newName="" localName="polyvinylchloride, at regional storage" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300011" systemDescription="Ecoinvent" image="Modern Computers 40">
+      <category name="Thermoplasts"/>
+      <category name="Plastics"/>
+    </process>
+    <process name="production of carton board boxes, offset printing, at plant" newName="" localName="production of carton board boxes, offset printing, at plant" unit="" location="" infrastructureProcess="false" processType="processing" processIdentifier="Teacher610287300003" systemDescription="Ecoinvent" image="Working Stiffs 57">
+      <category name="Cardboard"/>
+    </process>
+    <process name="recycling aluminium" newName="" localName="recycling aluminium" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300035" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="recycling cardboard" newName="" localName="recycling cardboard" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300036" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="recycling glass" newName="" localName="recycling glass" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300037" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="recycling paper" newName="" localName="recycling paper" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300038" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="recycling PP" newName="" localName="recycling PP" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300039" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="recycling PS" newName="" localName="recycling PS" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300044" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="recycling steel and iron" newName="" localName="recycling steel and iron" unit="" location="" infrastructureProcess="false" processType="waste treatment" processIdentifier="Teacher610287300040" image="Recycling 6">
+      <category name="Recycling"/>
+    </process>
+    <process name="steel, low-alloyed, at plant" newName="" localName="steel, low-alloyed, at plant" unit="" location="" infrastructureProcess="false" processType="material" processIdentifier="Teacher610287300005" systemDescription="Ecoinvent" image="Agriculture &amp; Industry 54">
+      <category name="Ferro"/>
+      <category name="Metals"/>
+    </process>
+    <process name="transport, lorry 28t" newName="" localName="transport, lorry 28t" unit="" location="" infrastructureProcess="false" processType="transport" processIdentifier="Teacher610287300013" systemDescription="Ecoinvent" image="Vehicles and transportati">
+      <category name="Road"/>
+    </process>
+    <process name="transport, van &lt;3.5t" newName="" localName="transport, van &lt;3.5t" unit="" location="" infrastructureProcess="false" processType="transport" processIdentifier="Teacher610287300014" systemDescription="Ecoinvent" image="Agriculture &amp; Industry 6">
+      <category name="Road"/>
+    </process>
+  </processes>
+  <mappings>
+    <categories/>
+    <units/>
+    <quantities/>
+    <substances/>
+    <processes/>
+    <sources/>
+    <dummyProcesses/>
+    <locations/>
+  </mappings>
+</root>

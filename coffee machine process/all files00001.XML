@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<ecoSpold xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.EcoInvent.org/EcoSpold01" xsi:schemaLocation="http://www.EcoInvent.org/EcoSpold01 http://www.EcoInvent.org/EcoSpold01..\..\EcoSpold01Dataset.xsd">
+  <dataset validCompanyCodes="CompanyCodes.xml" validRegionalCodes="RegionalCodes.xml" validCategories="Categories.xml" validUnits="Units.xml" number="1" timestamp="2006-11-16T11:33:19" generator="SimaPro 7.1">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction datasetRelatesToProduct="true" name="alkyd varnish ETH S demo7" localName="alkyd varnish ETH S demo7" infrastructureProcess="false" amount="1" unit="kg" category="Construction" subCategory="Paints" localCategory="Construction" localSubCategory="Paints" infrastructureIncluded="false"/>
+        <geography location="GLO" text="Europe, Western"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="1990-1994">
+          <startDate>1990-01-01</startDate>
+          <endDate>1994-12-31</endDate>
+        </timePeriod>
+        <dataSetInformation type="1" impactAssessmentResult="false" timestamp="2006-11-16T11:33:19" internalVersion="0.0" energyValues="0" languageCode="en" localLanguageCode="de"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness/>
+        <source number="1" sourceType="0" firstAuthor="Unknown" year="2006" title="ETH-ESU 1996" placeOfPublications="Unspecified"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="2" qualityNetwork="1"/>
+        <dataGeneratorAndPublication person="3" dataPublishedIn="2" referenceToPublishedSource="1" accessRestrictedTo="0"/>
+        <person number="2" name="SimaPro" address="Unknown"/>
+        <person number="3" name="SimaPro" address="Unknown"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange number="1" name="alkyd varnish ETH S demo7" location="GLO" unit="kg" meanValue="1" infrastructureProcess="false">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange number="2" category="air" subCategory="unspecified" name="NMVOC, non-methane volatile organic compounds, unspecified origin" unit="kg" meanValue="0.45" uncertaintyType="0">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange number="3" category="air" subCategory="unspecified" name="Xylene" unit="kg" meanValue="0.1" uncertaintyType="0">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>
