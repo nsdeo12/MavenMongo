@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "A Web user interface to administer MongoDB databases",
   "author": "Mark Moffat <mrvautin@gmail.com>",
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/mrvautin/adminmongo"
